@@ -1,7 +1,12 @@
 # Tkinter
+(describir la version de python ??)
 Tkinter es una librería de Python que permite crear interfaz gráfica de usuario (GUI en inglés). Es la librería que viene por defecto con la instalación de Python; esto no significa que otras alternativas, como por ejemplo PyQt, sean más potentes que Tkinter.
 
 ## GUI con Tkinter
+(Describir las clases que pueden contener elementos, como .Tk y .Frame para hacer una diferencia entre contenedores y no contenedores, creo puede mejor, asi los widget seran clases no contenedoras)
+(Tambien puede hacer un introduccion a las ventanas de dialogo que se pueden usar directamente)
+
+
 El primer paso para crear una GUI es crear la ventana principal como se muestra en el siguiente código:
 
 ```python
@@ -15,7 +20,7 @@ El resultado es el siguiente:
 
 ![Ventana Tkinter](https://github.com/juan-suarezp/PythonTkinterTutorial/blob/master/ventana.png)
 
-Un programa solo puede tener una `Tk`, debido a que es la raiz del programa y el primer widget que se debe crear; por lo tanto, cerrar la `Tk` cerraría la GUI. Existen otro tipo de ventanas llamadas `Toplevel` que son ventanas de la aplicación, la diferencia con la `Tk` es que al cerrar una ventana `Toplevel` destruirá todos los widgets secundarios colocados en esa ventana pero no cerrará el programa. 
+Un programa (puede ser mejor hablar de una aplicacion app??) solo puede tener una `Tk`, debido a que es la raiz del programa y el primer widget que se debe crear; por lo tanto, cerrar la `Tk` cerraría la GUI. Existen otro tipo de ventanas llamadas `Toplevel` que son ventanas de la aplicación, la diferencia con la `Tk` es que al cerrar una ventana `Toplevel` destruirá todos los widgets secundarios colocados en esa ventana pero no cerrará el programa. 
 
 Una vez se tiene la ventana principal, lo siguiente es agregar los botones, entradas, labels y demás widgets que necesitemos. Para esto, Tkinter cuenta con tres mecanismos para gestionar la geometría de los widgets de nuestra GUI: los métodos `pack()`, `grid()` y `place()`.
 
